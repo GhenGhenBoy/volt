@@ -286,7 +286,7 @@ def pay(request):
     # collect data to sendout to paystack
     curl = 'https://api.paystack.co/transaction/initialize'
     api_key = 'sk_test_be6ec1bb91a445f556403cce62354e38ea76ed1a'
-    cburl = 'http://34.207.234.114/callback'
+    cburl = 'http://54.197.28.173//callback'
     # cburl = 'https://localhost:8000/callback'
     user = User.objects.get(username = request.user.username)
     email = user.email
